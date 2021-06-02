@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CapstoneApplication</string>
+    <string name="title_home">Home</string>
+    <string name="title_checker">Camera</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="content_placeholder">Lorem Ipsum Dolor Sit Amet</string>
+    <string name="content_title">Content Title</string>
+    <string name="capture">Take Photo</string>
+    <string name="result">Result:</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_condition">100%</string>
+</resources>

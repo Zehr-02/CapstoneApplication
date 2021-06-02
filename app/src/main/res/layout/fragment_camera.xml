@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.CameraFragment">
+
+    <ImageView
+        android:id="@+id/camera_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/capture"
+        app:layout_constraintEnd_toEndOf="@+id/camera_preview"
+        app:layout_constraintStart_toStartOf="@+id/camera_preview"
+        app:layout_constraintTop_toBottomOf="@+id/camera_preview" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/result"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button_capture"
+        app:layout_constraintStart_toStartOf="@+id/button_capture"
+        app:layout_constraintTop_toBottomOf="@+id/button_capture" />
+
+    <TextView
+        android:id="@+id/tv_result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/item_name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_result"
+        app:layout_constraintStart_toStartOf="@+id/tv_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/tv_result_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/item_condition"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_result_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_result_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_name" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/button_capture"
+        app:layout_constraintStart_toStartOf="@+id/button_capture"
+        app:layout_constraintTop_toBottomOf="@+id/button_capture" />
+</androidx.constraintlayout.widget.ConstraintLayout>
